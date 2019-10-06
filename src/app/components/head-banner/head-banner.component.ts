@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeadBannerComponent implements OnInit {
 
-  constructor() { }
+  private labels: Array<string> = ['Accueil',
+    'Nos Résultats',
+    'Contact',
+    'Nos Prestations',
+    'Honoraires',
+    'Actualité',
+    'Publications',
+    'Glossaire',
+    'FAQ'];
 
-  ngOnInit() {
+  constructor() {  }
+
+  ngOnInit() {  }
+
+  logLabel(label: string) {
+    console.log('Message : ' + label);
   }
-
 }
