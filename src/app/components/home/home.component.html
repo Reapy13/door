@@ -1,5 +1,5 @@
 <div class="home">
-    <div>
+    <div *ngIf="homePage=='Accueil'">
         <img src="assets/profile.jpg" alt="Portrait"/>
     </div>
     <div *ngIf="homePage=='Accueil'">
@@ -10,5 +10,18 @@
             <li>27 Avenue du Midi</li>
         </ul>
     </div>
-    <div *ngIf="homePage!='Accueil'">Autre</div>
+    <div *ngIf="homePage=='Nos Résultats'">Page des résultats</div>
+    <div *ngIf="homePage=='Contact'">
+        <div>
+            Formulaire de contact
+        </div>
+    </div>
+    <div *ngIf="homePage=='Nos Prestations'">
+        Liste des prestations
+    </div>
+    <div *ngIf="homePage=='Honoraires'">Les soussous</div>
+    <div *ngIf="homePage=='Actualité'">Sûrement à enlever</div>
+    <div *ngIf="homePage=='Publications'">Liste des publications</div>
+    <div *ngIf="homePage=='Glossaire'">A enlever</div>
+    <div *ngIf="homePage=='FAQ'">Egalement</div>
 </div>
