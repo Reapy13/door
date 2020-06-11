@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {HeaderService} from '../../services/header.service';
 
 @Component({
   selector: 'app-head-banner',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeadBannerComponent implements OnInit {
 
-  private labels: Array<string> = ['Accueil',
+  labels: Array<string> = ['Accueil',
     'Nos Résultats',
     'Contact',
     'Nos Prestations',
@@ -17,11 +18,11 @@ export class HeadBannerComponent implements OnInit {
     'Glossaire',
     'FAQ'];
 
-  constructor() {  }
+  constructor( private headerService: HeaderService) {  }
 
-  ngOnInit() {  }
+  ngOnInit() {}
 
-  logLabel(label: string) {
-    console.log('Message : ' + label);
+  clickLabel(label: string) {
+    this.headerService.changeHomePage(label);
   }
 }

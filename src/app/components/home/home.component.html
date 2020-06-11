@@ -1,8 +1,8 @@
 <div class="home">
     <div>
-        <img src="../assets/profile.jpg"/>
+        <img src="assets/profile.jpg" alt="Portrait"/>
     </div>
-    <div>
+    <div *ngIf="homePage=='Accueil'">
         <ul>
             <li>Docteur Pierre FAUCHERY</li>
             <li>Médecin Généraliste, Expertise</li>
@@ -10,4 +10,5 @@
             <li>27 Avenue du Midi</li>
         </ul>
     </div>
+    <div *ngIf="homePage!='Accueil'">Autre</div>
 </div>

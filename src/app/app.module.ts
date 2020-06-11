@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HeadBannerComponent } from './components/head-banner/head-banner.component';
 import { FooterBannerComponent } from './components/footer-banner/footer-banner.component';
 import { HomeComponent } from './components/home/home.component';
+import {HeaderService} from './services/header.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { HomeComponent } from './components/home/home.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [HeaderService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

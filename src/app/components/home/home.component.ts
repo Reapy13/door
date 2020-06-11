@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {HeaderService} from '../../services/header.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  @Input()
+  homePage: string;
+
+  constructor( private headerService: HeaderService) { }
 
   ngOnInit() {
+    this.headerService.homePageChange.subscribe(homePage => this.homePage = homePage);
   }
 
 }
