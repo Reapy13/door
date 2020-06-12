@@ -3,7 +3,7 @@
   "version": "0.0.1-SNAPSHOT",
   "scripts": {
     "ng": "ng",
-    "start": "node --max_old_space_size=8048 ./node_modules/@angular/cli/bin/ng serve",
+    "start": "",
     "build": "ng build --baseHref='.'",
     "test": "ng test",
     "lint": "ng lint",
