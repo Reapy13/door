@@ -18,9 +18,9 @@ export class HeadBannerComponent implements OnInit {
     'Glossaire',
     'FAQ'];
 
-  constructor( private headerService: HeaderService) {  }
+  constructor(private headerService: HeaderService) {  }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
   clickLabel(label: string) {
     this.headerService.changeHomePage(label);

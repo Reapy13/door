@@ -1,6 +1,6 @@
-<div class="home">
+<div [@openClose]="pageChanged" class="home">
     <div *ngIf="homePage=='Accueil'">
-        <img src="assets/profile.jpg" alt="Portrait"/>
+        <img class="picture" src="assets/profile.jpg" alt="Portrait"/>
     </div>
     <div *ngIf="homePage=='Accueil'">
         <ul>
