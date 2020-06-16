@@ -25,7 +25,7 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
 })
 export class HomeComponent implements OnInit {
 
-    state = 'open';
+    state = 'closed';
 
     @Input()
     homePage: string;
@@ -33,7 +33,9 @@ export class HomeComponent implements OnInit {
     constructor(private headerService: HeaderService) { }
 
     ngOnInit() {
+        const that = this;
         this.headerService.homePageEvtEmt.subscribe(page => this.changeHomePage(page));
+        setTimeout(() => that.state = 'open', 100);
     }
 
     changeHomePage(page: string) {
