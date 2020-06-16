@@ -33,14 +33,17 @@ export class HomeComponent implements OnInit {
     constructor(private headerService: HeaderService) { }
 
     ngOnInit() {
-        const that = this;
         this.headerService.homePageEvtEmt.subscribe(page => this.changeHomePage(page));
-        setTimeout(() => that.state = 'open', 100);
+        this.changeToOpen();
     }
 
     changeHomePage(page: string) {
         this.state = 'closed';
         this.homePage = page;
+        this.changeToOpen();
+    }
+
+    changeToOpen() {
         const that = this;
         setTimeout(() => that.state = 'open', 100);
     }
