@@ -10,3 +10,7 @@ h4 {
 .picture {
     z-index: 0;
 }
+
+.bold {
+    font-weight: bold;
+}
