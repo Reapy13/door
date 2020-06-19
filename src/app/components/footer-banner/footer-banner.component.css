@@ -28,6 +28,7 @@
 }
 
 a {
+    width: max-content;
     margin: 0;
 }
 

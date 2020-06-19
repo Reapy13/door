@@ -3,6 +3,10 @@
     margin: 10px;
 }
 
+.title {
+    text-align: center;
+}
+
 h4 {
     font-weight: normal;
 }

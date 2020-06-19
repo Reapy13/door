@@ -14,10 +14,10 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
             state('closed', style({
                 opacity: 0
             })),
-            transition('* => closed', [
+            transition('open => closed', [
                 animate(0)
             ]),
-            transition('* => open', [
+            transition('closed => open', [
                 animate(500)
             ]),
         ]),
@@ -33,7 +33,11 @@ export class HomeComponent implements OnInit {
     constructor(private headerService: HeaderService) { }
 
     ngOnInit() {
-        this.headerService.homePageEvtEmt.subscribe(page => this.changeHomePage(page));
+        this.headerService.homePageEvtEmt.subscribe(page => {
+            if (page !== this.homePage) {
+                this.changeHomePage(page);
+            }
+        });
         this.changeToOpen();
     }
 
