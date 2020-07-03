@@ -18,3 +18,40 @@ h4 {
 .bold {
     font-weight: bold;
 }
+
+.italic {
+    font-style: italic;
+}
+
+.head-cv {
+    margin: 10px;
+
+    border-bottom: black solid 1px;
+}
+
+.center-page {
+    margin-top: 30px;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+.center {
+    text-align: center;
+}
+
+table, th, td {
+    border: solid 1px black;
+    border-collapse: collapse;
+}
+
+tr {
+    height: 20px;
+}
+
+.even {
+    background-color: #f0f8ff;
+}
+
+.odd {
+    background-color: lavender;
+}
