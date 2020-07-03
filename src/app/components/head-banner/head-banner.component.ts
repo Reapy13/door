@@ -9,7 +9,9 @@ import {HeaderService} from '../../services/header.service';
 export class HeadBannerComponent implements OnInit {
 
     labels: Array<string> = ['Accueil',
-        'Prendre rendez-vous'];
+        'CV',
+        'Prestations/Honoraires',
+        'Contact'];
 
     constructor(private headerService: HeaderService) { }
 
