@@ -1,0 +1,16 @@
+.bold {
+    font-weight: bold;
+}
+
+h4 {
+    font-weight: normal;
+}
+
+.home {
+    display: flex;
+}
+
+.picture {
+    z-index: 0;
+    margin-right: 50px;
+}

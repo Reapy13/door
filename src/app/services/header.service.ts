@@ -5,12 +5,12 @@ import {EventEmitter, Injectable, Output} from '@angular/core';
 })
 export class HeaderService {
 
-  @Output()
-  homePageChange: EventEmitter<string> = new EventEmitter();
+    @Output()
+    homePageEvtEmt: EventEmitter<string> = new EventEmitter();
 
-  constructor() { }
+    constructor() { }
 
-  changeHomePage(homePage: string) {
-    this.homePageChange.emit(homePage);
-  }
+    changeHomePage(homePage: string) {
+        this.homePageEvtEmt.emit(homePage);
+    }
 }

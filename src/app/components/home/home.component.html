@@ -1,27 +1,29 @@
-<div class="home">
-    <div *ngIf="homePage=='Accueil'">
-        <img src="assets/profile.jpg" alt="Portrait"/>
+<div [@openClose]="state" class="home">
+    <div>
+        <p>L'expertise médicale est obligatoire pour tout type d'accident.</p>
+        <br/><br/>
+        <p>Elle est en effet un préalable obligatoire avant toute indemnisation,
+            elle est sollicitée dans le cadre de la <span class="bold">réparation du préjudice corporel</span>,
+            notamment pour <span class="bold">les accidents de la circulation</span> en France et à m'étranger, les accidents de la vie, les accidents sportifs,
+            les aggressions en général, pour évaluer le dommage corporel,
+            on ne peut chiffrer le montant d'une indemnisation sans rapport médical et donc sans expertise médicale.</p>
+        <br/>
+        <p>Elle est aussi un préalable obligatoire avant toute indemnisation dans du <span class="bold">contentieux de la responsabilité médicale</span>,
+            cependant, en la matière, elle permet également et en premier lieu de déterminer les éventuelles responsabilités de chacun des intervenants et d 'éclairer le juge,
+            s'il s'agit d'une expertise judiciaire, sur la responsabilité encourue et ensuite également sur l'évaluation du dommage corporel.</p>
+        <br/>
+        <p>Actuellement, l'évaluation d'un dommage corporel s'établit par référence à la <span class="bold">nomenclature Dintilhac</span>.
+            Bien que celle-ci ne soit pas obligatoire, elle est edevenue un outil indispensable et utilisée par tous les professionnels : médecins experts, avocats et juges.
+            Cette nomenclature fait référence à plus d'une trentaine de postes de préjudices.</p>
+        <br/>
+        <h2>Expertise médicale : les pièges</h2>
+        <p><span class="bold">Quand on a besoin d'une expertise médicale dans un processus d'indemnisation, on ne sait jamais trop par où commencer...</span></p>
+        <br/>
+        <p>Les avocats ont un rôle déterminant dans votre démarche et peuvent vous faire gagner beaucoup de temps et une indemnisation à la hauteur de votre préjudice.
+            Il connaît les rouages de la justice et les juridictions correspondant à votre problème.</p>
+        <br/>
+        <p>L'objectif : faire de la prise en charge médicale, jurisique et indemnitaire, un seul et même processus avec un seul et même avocat.</p>
+        <p><span class="important">Attention :</span> en cas d'accident de la voie publique, il existe souvent un stress post-traumatique,
+            il est souvent peu exploré et mal reconnu en expertise. Un expert attentif et formé à l'évaluation de cette problèmatique vous sera utile.</p>
     </div>
-    <div *ngIf="homePage=='Accueil'">
-        <ul>
-            <li>Docteur Pierre FAUCHERY</li>
-            <li>Médecin Généraliste, Expertise</li>
-            <li>Limoges</li>
-            <li>27 Avenue du Midi</li>
-        </ul>
-    </div>
-    <div *ngIf="homePage=='Nos Résultats'">Page des résultats</div>
-    <div *ngIf="homePage=='Contact'">
-        <div>
-            Formulaire de contact
-        </div>
-    </div>
-    <div *ngIf="homePage=='Nos Prestations'">
-        Liste des prestations
-    </div>
-    <div *ngIf="homePage=='Honoraires'">Les soussous</div>
-    <div *ngIf="homePage=='Actualité'">Sûrement à enlever</div>
-    <div *ngIf="homePage=='Publications'">Liste des publications</div>
-    <div *ngIf="homePage=='Glossaire'">A enlever</div>
-    <div *ngIf="homePage=='FAQ'">Egalement</div>
 </div>

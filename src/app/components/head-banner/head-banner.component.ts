@@ -1,28 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import {HeaderService} from '../../services/header.service';
+import {Router} from '@angular/router';
 
 @Component({
-  selector: 'app-head-banner',
-  templateUrl: './head-banner.component.html',
-  styleUrls: ['./head-banner.component.css']
+    selector: 'app-head-banner',
+    templateUrl: './head-banner.component.html',
+    styleUrls: ['./head-banner.component.css']
 })
 export class HeadBannerComponent implements OnInit {
 
-  labels: Array<string> = ['Accueil',
-    'Nos Résultats',
-    'Contact',
-    'Nos Prestations',
-    'Honoraires',
-    'Actualité',
-    'Publications',
-    'Glossaire',
-    'FAQ'];
+    constructor(private router: Router, private headerService: HeaderService) { }
 
-  constructor( private headerService: HeaderService) {  }
+    ngOnInit() { }
 
-  ngOnInit() {}
-
-  clickLabel(label: string) {
-    this.headerService.changeHomePage(label);
-  }
+    public click(label: string) {
+        this.router.navigate(['/' + label]);
+        this.headerService.homePageEvtEmt.emit(label);
+    }
 }

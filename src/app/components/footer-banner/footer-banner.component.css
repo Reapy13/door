@@ -1,11 +1,50 @@
 .footer-banner {
-  position: static;
-  height : 50px;
+    display: grid;
+    position: static;
 
-  padding-top: 30px;
+    width: 100%;
+    height : auto;
 
-  text-align: center;
+    background-color : black;
+    color : white;
+}
 
-  background-color : black;
-  color : white;
+.info {
+    display: flex;
+}
+
+.links {
+    display: grid;
+
+    width: auto;
+    height: auto;
+    margin-left: 10px;
+    padding: 20px 10px 10px 20px;
+
+    text-align: left;
+
+    color: white;
+    text-decoration: underline;
+}
+
+a {
+    width: max-content;
+    margin: 0;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: grey;
+}
+
+.copyright {
+    margin: 10px 7% 20px 7%;
+    padding-top: 20px;
+
+    text-align: center;
+
+    border-top: white 1px solid;
 }
