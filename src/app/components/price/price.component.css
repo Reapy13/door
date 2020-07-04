@@ -1,0 +1,34 @@
+.bold {
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}
+
+.center-page {
+    margin-top: 30px;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+.even {
+    background-color: #f0f8ff;
+}
+
+.home {
+     display: flex;
+}
+
+.odd {
+    background-color: #e6e6fa;
+}
+
+table, th, td {
+    border: solid 1px black;
+    border-collapse: collapse;
+}
+
+tr {
+    height: 20px;
+}

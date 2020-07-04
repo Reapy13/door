@@ -1,14 +1,14 @@
 <mat-toolbar color="primary" class="header-banner">
-    <div class="head-button">
+    <div class="head-button" (click)="click('')">
         <app-head-button label="Accueil"></app-head-button>
     </div>
-    <div class="head-button">
+    <div class="head-button" (click)="click('cv')">
         <app-head-button label="CV"></app-head-button>
     </div>
-    <div class="head-button">
+    <div class="head-button" (click)="click('prestations/honoraires')">
         <app-head-button label="Prestations/Honoraires"></app-head-button>
     </div>
-    <div class="head-button">
+    <div class="head-button" (click)="click('contact')">
         <app-head-button label="Contact"></app-head-button>
     </div>
 </mat-toolbar>

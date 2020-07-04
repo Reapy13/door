@@ -1,11 +1,11 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {HeaderService} from '../../services/header.service';
+import { Component, OnInit } from '@angular/core';
 import {animate, state, style, transition, trigger} from '@angular/animations';
+import {HeaderService} from '../../services/header.service';
 
 @Component({
-    selector: 'app-home',
-    templateUrl: './home.component.html',
-    styleUrls: ['./home.component.css'],
+    selector: 'app-cv',
+    templateUrl: './cv.component.html',
+    styleUrls: ['./cv.component.css'],
     animations: [
         trigger('openClose', [
             state('open', style({
@@ -23,7 +23,7 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
         ]),
     ]
 })
-export class HomeComponent implements OnInit {
+export class CvComponent implements OnInit {
 
     private state = 'closed';
     private page: string;
