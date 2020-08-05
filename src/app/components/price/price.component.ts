@@ -25,7 +25,7 @@ import {HeaderService} from '../../services/header.service';
 })
 export class PriceComponent implements OnInit {
 
-    private state = 'closed';
+    state = 'closed';
     private page: string;
 
     constructor(private headerService: HeaderService) { }
