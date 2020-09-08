@@ -8,11 +8,12 @@ h4 {
 
 .home {
     display: flex;
+    margin: 3%;
 }
 
 .picture {
     z-index: 0;
     margin-right: 50px;
-    width: 531px;
-    height: 346px;
+    width: 50%;
+    height: 50%;
 }

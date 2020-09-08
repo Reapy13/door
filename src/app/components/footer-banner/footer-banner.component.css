@@ -15,6 +15,9 @@
 
 .footer-div {
     padding: 20px 10px 10px 20px;
+
+    color: white;
+    text-decoration: underline;
 }
 
 .links {
@@ -25,9 +28,6 @@
     margin-left: 1%;
 
     text-align: left;
-
-    color: white;
-    text-decoration: underline;
 }
 
 a {
@@ -51,10 +51,6 @@ a:hover {
     text-align: center;
 
     border-top: white 1px solid;
-}
-
-.italic {
-    font-style: italic;
 }
 
 .right {
